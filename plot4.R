@@ -1,3 +1,5 @@
+setwd("/Users/michiel/Dev/DataScience/ExData")
+
 # Read all data
 hhpc <- read.table("household_power_consumption.txt", header = TRUE, 
                    as.is = TRUE, sep = ";", na.strings = "?", 
@@ -16,7 +18,7 @@ par(mfrow=c(2,2))
 
 # Create topleft plot
 plot(hhpc$DateTime, hhpc$Global_active_power, type="l", main="", 
-     ylab="Global Active Power (kilowatts)", xlab="")
+     ylab="Global Active Power", xlab="")
 
 # Create topright plot
 plot(hhpc$DateTime, hhpc$Voltage, type="l", main="", 
