@@ -1,5 +1,3 @@
-setwd("/Users/michiel/Dev/DataScience/ExData")
-
 # Read all data
 hhpc <- read.table("household_power_consumption.txt", header = TRUE, 
                    as.is = TRUE, sep = ";", na.strings = "?", 
