@@ -10,6 +10,8 @@ hhpc$DateTime <- strptime(paste(hhpc$Date, hhpc$Time), "%d/%m/%Y %H:%M:%S")
 
 # Open device
 png("plot2.png", width = 480, height = 480, bg = "transparent")
+
+# Draw simple line graph based on DateTime x Global_active_power
 plot(hhpc$DateTime, hhpc$Global_active_power, type="l", main="", 
      ylab="Global Active Power (kilowatts)", xlab="")
 
